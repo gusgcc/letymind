@@ -18,13 +18,12 @@
 export default {
   mounted () {
     console.dir(document.getElementById('navbar').clientHeight, document.getElementById('navbar').offsetHeight, document.getElementById('navbar'))
-
+    document.getElementById('navbar').style.top = - document.getElementById('navbar').clientHeight + 'px'
     window.onscroll = function () {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById('navbar').style.top = "0"
-
       } else {
-        document.getElementById('navbar').style.top = "-50px"
+        document.getElementById('navbar').style.top = - document.getElementById('navbar').clientHeight + 'px'
       }
     }
   }
@@ -39,19 +38,22 @@ export default {
   justify-content: space-between
   align-items: center
   position: fixed
-  top: -50px
   transition: top 0.4s
   z-index: 2
   width: 100%
   background: white
+  color: $primary
   &_logo
     font-weight: bold
     font-size: 2em
   &_links
     display: flex
     a
+      cursor: pointer
       padding: 0 1em
       font-size: 1.4em
+      transition: all 0.4s
+    a:hover
 @media only screen and (min-width: 992px)
   .navbar
     font-size: 15px  

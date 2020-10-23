@@ -32,19 +32,20 @@ export default {};
 <style lang="sass" scoped>
 .seccion1
   width: 100%
+  background: rgba(76,27,255,0.1)
   &_izq
-    padding: 2em 1em
-    text-align: center
+    padding: 2em 4em
     h1, p
+      width: 100%
       color: $primary
       margin-bottom: 1em
       font-size: 1.7em
     h1
-      font-size: 2.5em
+      font-size: 4em
     .container_buttons
       display: flex
-      flex-direction: column
-      justify-content: center
+      flex-direction: row
+      justify-content: space-around
       align-items: center
       width: 100%
       button
@@ -53,10 +54,10 @@ export default {};
         color: $primary
         font-weight: bold
         font-size: 1.8em
-        width: 80%
+        width: 40%
         background: none
         border: 2px solid $primary
-        padding: 1em 2em
+        padding: 1em 1em
         border-radius: 2em
         margin-bottom: 2em
         transition: all 0.4s

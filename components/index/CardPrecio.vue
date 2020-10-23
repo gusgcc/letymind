@@ -22,7 +22,8 @@ export default {
     flex-direction: column
     justify-content: space-around
     align-items: center
-    padding: 1em 2em
+    padding: 3em 2em
+    box-shadow: 6px 6px 11px 0px rgba($primary,0.3)
     .title
         color: $primary
         font-size: 5em
@@ -46,6 +47,7 @@ export default {
         width: 80%
         padding: 0.5em 1em
         transition: all 0.4s
+        cursor: pointer
     .btn_start:hover
         background: $primary
         opacity: 0.7
